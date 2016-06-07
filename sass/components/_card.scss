@@ -91,6 +91,7 @@
         border: 1px solid;
         @include border-radius(100%);
         @include transition(background-color .3s ease);
+        vertical-align: 4%;
       }
     }
 

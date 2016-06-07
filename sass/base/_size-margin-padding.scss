@@ -3,13 +3,21 @@ $nav-width: 300px;
 $icone-tamanho: 17px;
 $icone-margin: 35px 30px 0 30px;
 $img-margin: 100px auto 37px auto;
+$categorias-padding: 25px;
+$categoria-icone-margin-right: 12px;
+$categoria-li-margin: 0 10px;
+$categoria-a-padding: 1px;
+$opcoes-a-padding: 5px $categoria-a-padding;
+$opcoes-margin-right: 15px;
+$opcoes-margin-left: -25px;
 
 // Content
 $content-padding: 45px;
 
 // Card
 $card-width: 265px;
-$tarefa-icon-size: 8px;
+$tarefa-icon-size: 7px;
+$categoria-icon-size: 7px;
 $add-tarefa-icon-size: 10px;
 
 $card-margin-bottom: $content-padding;
