@@ -80,6 +80,51 @@ body {
     }
   }
 
+  h5 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: $titulo-margin-bottom;
+    color: $titulo-nota-cor;
+    font-size: $titulo-font-size;
+    @include transition(all .2s ease);
+    &:hover {
+      color: $roxo;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .procurar {
+    position: relative;
+
+    span {
+      position: absolute !important;
+      padding: 10px;
+      pointer-events: none;
+      left: 32px;
+      color: $pesquisa-icon-cor;
+    }
+
+    input {
+      display: block;
+      width: 80%;
+      margin: 45px auto 10px auto;
+      padding: 6px 12px;
+      padding-left: 32px;
+      border: 2px solid $pesquisa-border-cor;
+      color: $pesquisa-placeholder-cor;
+      @include border-radius(25px);
+      font-style: normal;
+      @include input-placeholder {
+        color: $titulo-cor;
+      }
+
+  }
+
+  }
+
   /* Sidebar Styles */
 
   ul {
@@ -103,6 +148,9 @@ body {
         &:hover {
           text-decoration: none;
           background: $bg-cor;
+          &::before {
+            color: $roxo;
+          }
         }
 
         &active,

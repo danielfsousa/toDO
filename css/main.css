@@ -10649,7 +10649,7 @@ body {
   background-color: #f6f7f9;
   clear: both;
   display: block;
-  margin: 100px auto 37px auto;
+  margin: 100px auto 30px auto;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
@@ -10664,7 +10664,68 @@ body {
   border-width: 3px;
   box-shadow: 0 0 0 5px white, 0 0 0 6px #a483fd;
 }
-/* line 85, ../sass/layout/_nav-left.scss */
+/* line 83, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper h5 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #848b97;
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/* line 90, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper h5:hover {
+  color: #a483fd;
+}
+/* line 95, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper a:hover {
+  text-decoration: none;
+}
+/* line 99, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper .procurar {
+  position: relative;
+}
+/* line 102, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper .procurar span {
+  position: absolute !important;
+  padding: 10px;
+  pointer-events: none;
+  left: 32px;
+  color: #dce0e8;
+}
+/* line 110, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper .procurar input {
+  display: block;
+  width: 80%;
+  margin: 45px auto 10px auto;
+  padding: 6px 12px;
+  padding-left: 32px;
+  border: 2px solid #eceef2;
+  color: #999;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  font-style: normal;
+}
+/* line 61, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#sidebar-wrapper .procurar input:-moz-placeholder {
+  color: #746e72;
+}
+/* line 64, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#sidebar-wrapper .procurar input::-moz-placeholder {
+  color: #746e72;
+}
+/* line 67, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#sidebar-wrapper .procurar input:-ms-input-placeholder {
+  color: #746e72;
+}
+/* line 56, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#sidebar-wrapper .procurar input::-webkit-input-placeholder {
+  color: #746e72;
+}
+/* line 130, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul {
   top: 0;
   width: 300px;
@@ -10672,29 +10733,33 @@ body {
   padding: 25px;
   list-style: none;
 }
-/* line 92, ../sass/layout/_nav-left.scss */
+/* line 137, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul li {
   margin: 0 10px;
   text-indent: 20px;
   line-height: 40px;
 }
-/* line 97, ../sass/layout/_nav-left.scss */
+/* line 142, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul li a {
   padding: 1px;
   display: block;
   text-decoration: none;
   color: #999;
 }
-/* line 103, ../sass/layout/_nav-left.scss */
+/* line 148, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul li a:hover {
   text-decoration: none;
   background: #f6f7f9;
 }
-/* line 108, ../sass/layout/_nav-left.scss */
+/* line 151, ../sass/layout/_nav-left.scss */
+#sidebar-wrapper ul li a:hover::before {
+  color: #a483fd;
+}
+/* line 156, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul li aactive, #sidebar-wrapper ul li afocus {
   text-decoration: none;
 }
-/* line 114, ../sass/layout/_nav-left.scss */
+/* line 162, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper ul li .categoria::before {
   content: "";
   display: inline-block;
@@ -10707,15 +10772,15 @@ body {
   border-radius: 100%;
   vertical-align: 4%;
 }
-/* line 128, ../sass/layout/_nav-left.scss */
+/* line 176, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper .opcoes {
   padding-top: 0;
 }
-/* line 131, ../sass/layout/_nav-left.scss */
+/* line 179, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper .opcoes li a {
   padding: 5px 1px;
 }
-/* line 134, ../sass/layout/_nav-left.scss */
+/* line 182, ../sass/layout/_nav-left.scss */
 #sidebar-wrapper .opcoes li a:before {
   color: #bbc2cc;
   margin-right: 15px;
@@ -10723,33 +10788,33 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 157, ../sass/layout/_nav-left.scss */
+  /* line 205, ../sass/layout/_nav-left.scss */
   #wrapper {
     padding-left: 300px;
   }
 
-  /* line 161, ../sass/layout/_nav-left.scss */
+  /* line 209, ../sass/layout/_nav-left.scss */
   #wrapper.toggled {
     padding-left: 0;
   }
 
-  /* line 165, ../sass/layout/_nav-left.scss */
+  /* line 213, ../sass/layout/_nav-left.scss */
   #sidebar-wrapper {
     width: 300px;
   }
 
-  /* line 169, ../sass/layout/_nav-left.scss */
+  /* line 217, ../sass/layout/_nav-left.scss */
   #wrapper.toggled #sidebar-wrapper {
     width: 0;
   }
 
-  /* line 173, ../sass/layout/_nav-left.scss */
+  /* line 221, ../sass/layout/_nav-left.scss */
   #page-content-wrapper {
     padding: 45px;
     position: relative;
   }
 
-  /* line 178, ../sass/layout/_nav-left.scss */
+  /* line 226, ../sass/layout/_nav-left.scss */
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0;
