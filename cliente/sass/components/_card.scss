@@ -1,0 +1,142 @@
+.card {
+
+  &::before {
+    content: "";
+    position: relative;
+    z-index: -1;
+    display: block;
+    bottom: 3.5px;
+    margin: 0 auto;
+    height: 10px;
+    width: 97%;
+    @include border-radius(7px);
+    @include box-shadow($card-shadow);
+  }
+
+  width: $card-width;
+  background-color: $card-cor;
+  @include border-top-radius(7px);
+  @include border-bottom-radius(7px);
+  @include box-shadow($card-shadow);
+  @include transition(all .2s ease-in-out);
+  position: relative;
+  margin-bottom: $card-margin-bottom;
+
+  .chead {
+    z-index: 1;
+    @include border-top-radius(7px);
+    padding: $card-head-padding;
+    position: relative;
+
+    h2 {
+      margin: $card-h2-padding;
+      font-size: $font-size-h5;
+      color: $titulo-nota-cor;
+      text-align: center;
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    span {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      cursor: pointer;
+      color: $dots-cor;
+      display: inline;
+      @include transition(color .2s ease-in-out);
+      &:hover {
+        color: darken($dots-cor, 15%);
+
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      top: $separador-top;
+      height: 1px;
+      width: 95%;
+      margin: 0 auto;
+      background-color: $separador-cor;
+    }
+  }
+
+  .cbody {
+    z-index: 1;
+    position: relative;
+    @include border-bottom-radius(7px);
+    padding: $card-body-padding;
+    font-weight: $tarefas-font-weight;
+    background-color: $card-cor;
+    color: $tarefa-cor;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: $tarefas-margin-bottom;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        height: $tarefa-icon-size;
+        width: $tarefa-icon-size;
+        margin-right: $tarefa-margin-right;
+        border: 1px solid;
+        @include border-radius(100%);
+        @include transition(background-color .3s ease);
+        vertical-align: 4%;
+      }
+    }
+
+    .add-tarefa {
+      &:before {
+        @include border-radius(0);
+        @extend .glyphicon;
+        @extend .glyphicon-plus;
+        font-size: $add-tarefa-icon-size;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        color: $add-icone-cor;
+        @include transition(all .4s ease-in-out);
+        vertical-align: 15%;
+      }
+      margin-bottom: 0;
+      color: $add-nota-cor;
+      cursor: pointer;
+
+      &:hover {
+        color: darken($add-icone-cor, 15%);
+        &:before {
+          color: darken($add-icone-cor, 5%);
+          @include transform(rotateY(180deg));
+
+        }
+      }
+
+    }
+  }
+
+  &:hover {
+    @include box-shadow($card-shadow-hover);
+  }
+}
+
+.completo {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
