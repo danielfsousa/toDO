@@ -1,0 +1,194 @@
+.roxo {
+  &::before {
+    background-color: $roxo;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $roxo !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $roxo;
+    }
+  }
+}
+
+.amarelo {
+  &::before {
+    background-color: $amarelo;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $amarelo !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $amarelo;
+    }
+  }
+}
+
+.rosa {
+  &::before {
+    background-color: $rosa;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $rosa !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $rosa;
+    }
+  }
+}
+
+.ciano {
+  &::before {
+    background-color: $ciano;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $ciano !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $ciano;
+    }
+  }
+}
+
+.azul-escuro {
+  &::before {
+    background-color: $azul-escuro;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $azul-escuro !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $azul-escuro;
+    }
+  }
+}
+
+.verde {
+  &::before {
+    background-color: $verde;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $verde !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $verde;
+    }
+  }
+}
+
+.vermelho {
+  &::before {
+    background-color: $vermelho;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $vermelho !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $vermelho;
+    }
+  }
+}
+
+.laranjado {
+  &::before {
+    background-color: $laranjado;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $laranjado !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $laranjado;
+    }
+  }
+}
+
+.azul {
+  &::before {
+    background-color: $azul;
+  }
+
+  li,
+  a {
+    &::before {
+      border-color: $azul !important;
+    }
+  }
+  .completo,
+  .categoria {
+    &::before {
+      background-color: $azul;
+    }
+  }
+}
+
+.completo {
+  span {
+    position: relative;
+    white-space: nowrap;
+
+    &::after {
+      border-top: 1px solid $tarefa-cor;
+      position: absolute;
+      content: "";
+      right: 0;
+      top:50%;
+      left: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
