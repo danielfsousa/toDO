@@ -1,0 +1,17 @@
+footer {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: $font-size-h6;
+  color: $footer-texto-cor;
+
+  a {
+    font-weight: 400;
+    color: $footer-link-cor;
+
+    &:hover {
+      text-decoration: none;
+      color: lighten($footer-link-cor, 5%);
+    }
+  }
+}

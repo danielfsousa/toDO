@@ -1,0 +1,33 @@
+.card {
+  .dropdown {
+    position: static;
+  }
+
+  .dropdown-menu {
+    top: 35px;
+    left: 55px;
+    border: none;
+    @include box-shadow($card-dropdown-shadow);
+    @include border-radius(7px);
+
+    &.open {
+      display: inline-block;
+    }
+
+    a {
+      color: $titulo-cor;
+      font-weight: $tarefas-font-weight;
+
+    }
+
+    a:hover {
+      background-color: $bg-cor;
+      color: $titulo-cor;
+    }
+
+    .divider {
+      background-color: $separador-cor;
+    }
+  }
+
+}
